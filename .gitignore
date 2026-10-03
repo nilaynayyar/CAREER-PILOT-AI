@@ -1,0 +1,136 @@
+# ==============================================================================
+# CAREERPILOT AI - ROOT .GITIGNORE
+# Comprehensive Git Exclusion Rules for Python, Node/Next.js, Expo, Tauri & IDEs
+# ==============================================================================
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.mypy_cache/
+.ruff_cache/
+
+# --- Python Packaging & Distribution ---
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env_ml/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Environment Variables & Secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.pfx
+*.p12
+
+# --- Node / Frontend (Next.js) ---
+node_modules/
+*/node_modules/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Mobile (Expo / React Native) ---
+.expo/
+.expo-shared/
+.metro/
+metro-cache/
+android/.gradle/
+android/local.properties
+android/app/build/
+ios/Pods/
+ios/build/
+*.apk
+*.aab
+*.ipa
+
+# --- Desktop (Tauri / Rust) ---
+src-tauri/target/
+target/
+
+# --- IDEs & Editors ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# --- Logs & Runtime State ---
+*.log
+logs/
+runtime/state/
+runtime/cache/
+temp/
+tmp/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Data Directories ---
+# Raw and processed datasets are kept local or tracked by .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Note: data/onet/occupations.json is intentionally tracked as required runtime knowledge base
+
+# --- ML Model Artifacts ---
+# Exclude training checkpoints and temporary dumps, but PRESERVE required runtime model and metadata
+ml/models/*
+!ml/models/.gitkeep
+!ml/models/final_model.joblib
+!ml/models/model_metadata.json

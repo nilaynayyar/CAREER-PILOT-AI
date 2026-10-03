@@ -1,0 +1,136 @@
+{
+  "model_name": "LogisticRegression",
+  "sklearn_version": "1.5.2",
+  "training_date_utc": "2026-10-03T14:37:52.384871+00:00",
+  "dataset": "data/raw/ameo_2015.csv",
+  "dataset_sha256": "113f730100901dd24e550ffa33ee0b599e99d1f48bde1ae7f1041c903ad17d4b",
+  "random_seed": 42,
+  "target_definition": {
+    "column": "SalaryTier",
+    "type": "tertile_classification",
+    "source_column": "Salary",
+    "thresholds_inr": [
+      210000.0,
+      335000.0
+    ],
+    "labels": [
+      "Low",
+      "Mid",
+      "High"
+    ]
+  },
+  "feature_list": [
+    "10percentage",
+    "12percentage",
+    "collegeGPA",
+    "English",
+    "Logical",
+    "Quant",
+    "ComputerProgramming",
+    "conscientiousness",
+    "agreeableness",
+    "extraversion",
+    "nueroticism",
+    "openess_to_experience",
+    "CollegeTier",
+    "Specialization",
+    "Degree"
+  ],
+  "n_features": 15,
+  "cv_comparison": {
+    "logistic_regression": {
+      "cv_time_s": 0.72,
+      "accuracy_mean": 0.5107,
+      "accuracy_std": 0.0107,
+      "f1_macro_mean": 0.5054,
+      "f1_macro_std": 0.0111,
+      "f1_weighted_mean": 0.5049,
+      "f1_weighted_std": 0.0112,
+      "precision_macro_mean": 0.5046,
+      "precision_macro_std": 0.0116,
+      "recall_macro_mean": 0.5115,
+      "recall_macro_std": 0.0107
+    },
+    "decision_tree": {
+      "cv_time_s": 0.39,
+      "accuracy_mean": 0.4367,
+      "accuracy_std": 0.022,
+      "f1_macro_mean": 0.4354,
+      "f1_macro_std": 0.0226,
+      "f1_weighted_mean": 0.4351,
+      "f1_weighted_std": 0.0224,
+      "precision_macro_mean": 0.4384,
+      "precision_macro_std": 0.023,
+      "recall_macro_mean": 0.4369,
+      "recall_macro_std": 0.0223
+    },
+    "random_forest": {
+      "cv_time_s": 2.84,
+      "accuracy_mean": 0.4943,
+      "accuracy_std": 0.0221,
+      "f1_macro_mean": 0.488,
+      "f1_macro_std": 0.0223,
+      "f1_weighted_mean": 0.4872,
+      "f1_weighted_std": 0.0223,
+      "precision_macro_mean": 0.4889,
+      "precision_macro_std": 0.023,
+      "recall_macro_mean": 0.4949,
+      "recall_macro_std": 0.0221
+    },
+    "hist_gradient_boosting": {
+      "cv_time_s": 8.4,
+      "accuracy_mean": 0.4793,
+      "accuracy_std": 0.0148,
+      "f1_macro_mean": 0.4789,
+      "f1_macro_std": 0.0168,
+      "f1_weighted_mean": 0.4784,
+      "f1_weighted_std": 0.0169,
+      "precision_macro_mean": 0.4791,
+      "precision_macro_std": 0.0181,
+      "recall_macro_mean": 0.4798,
+      "recall_macro_std": 0.0145
+    }
+  },
+  "baselines": {
+    "dummy_majority": {
+      "accuracy": 0.3377415026833631,
+      "f1_macro": 0.16831425858363736,
+      "f1_weighted": 0.1705402296158142,
+      "precision_macro": 0.1125805008944544,
+      "recall_macro": 0.3333333333333333
+    },
+    "dummy_stratified": {
+      "accuracy": 0.3302363915154613,
+      "f1_macro": 0.33005317256440053,
+      "f1_weighted": 0.32994462988274703,
+      "precision_macro": 0.3300095710675136,
+      "recall_macro": 0.3303329013478996
+    },
+    "dummy_uniform": {
+      "accuracy": 0.3359538717096857,
+      "f1_macro": 0.33588502226919537,
+      "f1_weighted": 0.3356705592416644,
+      "precision_macro": 0.3358075615731553,
+      "recall_macro": 0.33628099391382726
+    }
+  },
+  "tuning": {
+    "model": "logistic_regression",
+    "best_params": {
+      "solver": "lbfgs",
+      "max_iter": 500,
+      "C": 0.1
+    },
+    "best_cv_f1_macro": 0.5077,
+    "n_iter": 8,
+    "cv_folds": 5,
+    "tuning_time_s": 9.42
+  },
+  "final_test_metrics": {},
+  "important_limitations": [
+    "AMEO 2015 covers Indian engineering graduates (2010\u20132015). Predictions should not be generalised to all students or current market conditions.",
+    "SalaryTier thresholds are derived from this historical dataset. They do not reflect absolute present-day salary benchmarks.",
+    "Model performance is moderate (macro-F1 ~0.50). Predictions are probabilistic guidance, not guarantees.",
+    "Post-employment features (Designation, JobCity, DOJ, DOL) were strictly excluded as inputs."
+  ]
+}

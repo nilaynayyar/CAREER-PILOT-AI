@@ -1,0 +1,33 @@
+{
+  "predicted_tier": "Low",
+  "class_probabilities": {
+    "High": 0.1509,
+    "Low": 0.5788,
+    "Mid": 0.2703
+  },
+  "confidence": 0.5788,
+  "top_model_features": [
+    "Specialization_computer engineering",
+    "Specialization_computer science & engineering",
+    "Specialization_electronics and communication engineering",
+    "AMCAT Quantitative Score",
+    "Degree_M.Tech./M.E."
+  ],
+  "input_profile": {
+    "10th Grade Score (%)": 67.6,
+    "12th Grade Score (%)": 70.2,
+    "College GPA (%)": 70.7,
+    "AMCAT English Score": 370.0,
+    "AMCAT Logical Reasoning Score": 495.0,
+    "AMCAT Quantitative Score": 485.0,
+    "AMCAT Programming Score": 385.0,
+    "Conscientiousness (Big Five)": -0.4463,
+    "Agreeableness (Big Five)": -0.2871,
+    "Extraversion (Big Five)": -0.6048,
+    "Neuroticism (Big Five)": 0.1459,
+    "Openness to Experience (Big Five)": -1.8189,
+    "College Tier (1=Tier-1, 2=Tier-2)": 2.0
+  },
+  "interpretation": "Based on your academic profile and aptitude scores, this model associates your profile with the **Low** salary tier (probability: 57.9%).\n\n**Important:** This is a statistical association from historical data (AMEO 2015 \u2014 Indian engineering graduates, 2010\u20132015). It is not a guarantee or prediction of your future earnings.",
+  "disclaimer": "Model trained on AMEO 2015 dataset. Results are probabilistic guidance based on historical patterns, not personal guarantees."
+}

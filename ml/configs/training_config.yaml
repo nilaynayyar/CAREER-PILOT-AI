@@ -1,0 +1,127 @@
+# ==============================================================================
+# CareerPilot AI — Phase 2 ML Training Configuration
+# ==============================================================================
+# This file is the single source of truth for all training parameters.
+# All scripts import from this config; do NOT hard-code values in scripts.
+# ==============================================================================
+
+# --------------------------------------------------------------------------
+# Reproducibility
+# --------------------------------------------------------------------------
+random_seed: 42
+
+# --------------------------------------------------------------------------
+# Dataset Paths (relative to project root)
+# --------------------------------------------------------------------------
+raw_data_path: "data/raw/ameo_2015.csv"
+processed_dir: "data/processed"
+models_dir: "ml/models"
+reports_dir: "docs/reports"
+
+# Expected SHA-256 of raw file (verified during audit)
+raw_data_sha256: "113f730100901dd24e550ffa33ee0b599e99d1f48bde1ae7f1041c903ad17d4b"
+
+# --------------------------------------------------------------------------
+# Target Definition
+# --------------------------------------------------------------------------
+target_column: "SalaryTier"          # Derived column name (not in raw CSV)
+salary_source_column: "Salary"       # Raw column used to derive target
+target_n_quantiles: 3                # Tertile split: Low / Mid / High
+target_labels: ["Low", "Mid", "High"]
+
+# --------------------------------------------------------------------------
+# Features
+# --------------------------------------------------------------------------
+
+# Numerical features — continuous / ordinal scores
+numerical_features:
+  - "10percentage"        # 10th grade marks
+  - "12percentage"        # 12th grade marks
+  - "collegeGPA"          # College cumulative GPA (percentage scale)
+  - "English"             # AMCAT English aptitude score
+  - "Logical"             # AMCAT Logical reasoning score
+  - "Quant"               # AMCAT Quantitative aptitude score
+  - "ComputerProgramming" # AMCAT CS/Programming module (-1 = not taken → NaN)
+  - "conscientiousness"   # Big Five OCEAN trait (z-score)
+  - "agreeableness"       # Big Five OCEAN trait (z-score)
+  - "extraversion"        # Big Five OCEAN trait (z-score)
+  - "nueroticism"         # Big Five OCEAN trait (z-score, note: typo is in source data)
+  - "openess_to_experience" # Big Five OCEAN trait (z-score)
+
+# Ordinal feature (integer but treated numerically)
+ordinal_features:
+  - "CollegeTier"         # 1 = Tier-1 institution, 2 = Tier-2
+
+# Categorical features — to be one-hot encoded
+categorical_features:
+  - "Specialization"      # CS, IT, ECE, Mechanical, Civil, etc.
+  - "Degree"              # B.Tech, B.E., MCA
+
+# Domain-module sentinel: -1 means "module not taken"
+# These columns will have -1 replaced with NaN before imputation
+sentinel_columns:
+  - "ComputerProgramming"
+
+# --------------------------------------------------------------------------
+# Columns to DROP before training
+# --------------------------------------------------------------------------
+drop_columns:
+  # Administrative keys
+  - "Unnamed: 0"
+  - "ID"
+  - "CollegeID"
+  - "CollegeCityID"
+  # Post-hire outcomes (leakage)
+  - "Salary"              # Source of target — NEVER an input feature
+  - "Designation"         # Post-hire job title
+  - "JobCity"             # Post-hire work location
+  - "DOJ"                 # Date of joining (post-hire)
+  - "DOL"                 # Date of leaving (post-hire)
+  # Protected demographic attributes
+  - "Gender"
+  - "DOB"
+  # Other columns not in our selected feature set
+  - "10board"
+  - "12graduation"
+  - "12board"
+  - "CollegeCityTier"
+  - "CollegeState"
+  - "GraduationYear"
+  - "ElectronicsAndSemicon"
+  - "ComputerScience"
+  - "MechanicalEngg"
+  - "ElectricalEngg"
+  - "TelecomEngg"
+  - "CivilEngg"
+  - "Domain"
+
+# --------------------------------------------------------------------------
+# Train / Validation / Test Split
+# --------------------------------------------------------------------------
+test_size: 0.15       # 15% held out as final untouched test set
+val_size: 0.15        # 15% of remainder for validation / CV
+cv_folds: 5           # Stratified K-Fold for cross-validation
+
+# --------------------------------------------------------------------------
+# Hyperparameter Tuning Grids
+# --------------------------------------------------------------------------
+tuning:
+  random_forest:
+    n_estimators: [100, 200, 400]
+    max_depth: [null, 8, 15]
+    min_samples_leaf: [1, 3, 5]
+    max_features: ["sqrt", "log2"]
+
+  hist_gradient_boosting:
+    max_iter: [100, 200, 400]
+    max_depth: [3, 5, 7]
+    learning_rate: [0.05, 0.1, 0.2]
+    min_samples_leaf: [10, 20, 40]
+
+  logistic_regression:
+    C: [0.01, 0.1, 1.0, 10.0]
+    solver: ["lbfgs", "saga"]
+    max_iter: [500]
+
+# Primary metric for model selection (used in cross-validation scoring)
+primary_metric: "f1_macro"

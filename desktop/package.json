@@ -1,0 +1,17 @@
+{
+  "name": "careerpilot-ai-desktop",
+  "version": "1.0.0",
+  "description": "CareerPilot AI — Windows Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win"
+  },
+  "keywords": ["careerpilot", "desktop", "windows", "ai", "career-guidance"],
+  "author": "CareerPilot AI Team",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}

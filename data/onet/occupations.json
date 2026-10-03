@@ -1,0 +1,279 @@
+{
+  "occupations": [
+    {
+      "soc_code": "15-1252.00",
+      "title": "Software Developers",
+      "description": "Research, design, and develop computer and network software or specialized utility programs. Analyze user needs and develop software solutions, applying principles and techniques of computer science, engineering, and mathematical analysis.",
+      "skills": [
+        "Programming", "Systems Analysis", "Critical Thinking", "Active Learning",
+        "Complex Problem Solving", "Operations Analysis", "Quality Control Analysis",
+        "Judgment and Decision Making", "Systems Evaluation", "Troubleshooting"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Engineering and Technology", "Mathematics",
+        "Design", "English Language", "Customer and Personal Service",
+        "Telecommunications", "Administration and Management"
+      ],
+      "tech_skills": [
+        "Python", "Java", "JavaScript", "C++", "SQL", "Git", "Linux",
+        "REST APIs", "Docker", "Cloud platforms (AWS/GCP/Azure)", "Agile/Scrum"
+      ],
+      "tasks": [
+        "Analyze user needs and software requirements",
+        "Design and develop software systems using scientific analysis",
+        "Test and maintain software to ensure adequate performance",
+        "Collaborate with engineers and other developers",
+        "Consult with customers about software system design",
+        "Store, retrieve, and manipulate data for analysis"
+      ],
+      "related_soc_codes": ["15-1251.00", "15-1211.00", "15-1299.08"]
+    },
+    {
+      "soc_code": "15-1251.00",
+      "title": "Computer Programmers",
+      "description": "Create, modify, and test the code and scripts that allow computer applications to run. Work from specifications drawn up by software and web developers or other individuals.",
+      "skills": [
+        "Programming", "Critical Thinking", "Active Learning", "Reading Comprehension",
+        "Complex Problem Solving", "Operations Analysis", "Troubleshooting"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Mathematics", "Engineering and Technology",
+        "English Language", "Customer and Personal Service"
+      ],
+      "tech_skills": [
+        "Java", "Python", "C#", ".NET", "SQL", "HTML/CSS", "JavaScript",
+        "Git", "IDE tools", "Unit testing frameworks"
+      ],
+      "tasks": [
+        "Correct errors by making appropriate changes and rechecking the program",
+        "Perform or direct revision, repair, or expansion of existing programs",
+        "Write, update, and maintain computer programs or software packages",
+        "Consult with managerial, engineering, and technical personnel",
+        "Write or contribute to instructions or manuals to help users"
+      ],
+      "related_soc_codes": ["15-1252.00", "15-1299.08", "15-1211.00"]
+    },
+    {
+      "soc_code": "15-1211.00",
+      "title": "Computer Systems Analysts",
+      "description": "Analyze science, engineering, business, and other data processing problems to develop and implement solutions to complex applications problems. Improve existing computer systems and review computer system capabilities.",
+      "skills": [
+        "Systems Analysis", "Critical Thinking", "Active Learning", "Programming",
+        "Complex Problem Solving", "Coordination", "Judgment and Decision Making",
+        "Management of Personnel Resources", "Systems Evaluation"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Customer and Personal Service",
+        "Administration and Management", "Engineering and Technology",
+        "Mathematics", "English Language", "Economics and Accounting"
+      ],
+      "tech_skills": [
+        "SQL", "ERP systems", "Business intelligence tools", "Python",
+        "Data modelling", "UML", "Project management software", "Excel/Spreadsheets",
+        "Systems documentation tools"
+      ],
+      "tasks": [
+        "Provide staff and users with assistance solving computer-related problems",
+        "Test, maintain, and monitor computer programs and systems",
+        "Assess the usefulness of pre-developed application packages",
+        "Analyze information to determine, recommend, and plan system installations",
+        "Define the goals of the system and devise flow charts and diagrams"
+      ],
+      "related_soc_codes": ["15-1252.00", "15-1244.00", "15-1299.08"]
+    },
+    {
+      "soc_code": "15-2051.00",
+      "title": "Data Scientists",
+      "description": "Develop and implement a set of techniques or analytics applications to transform raw data into meaningful information using data-oriented programming languages and visualization software.",
+      "skills": [
+        "Programming", "Mathematics", "Critical Thinking", "Complex Problem Solving",
+        "Systems Analysis", "Active Learning", "Science", "Operations Analysis",
+        "Judgment and Decision Making"
+      ],
+      "knowledge_areas": [
+        "Mathematics and Statistics", "Computers and Electronics",
+        "English Language", "Engineering and Technology",
+        "Customer and Personal Service", "Administration and Management"
+      ],
+      "tech_skills": [
+        "Python", "R", "SQL", "Machine learning frameworks (scikit-learn, TensorFlow, PyTorch)",
+        "Data visualisation (Matplotlib, Seaborn, Tableau)", "Jupyter Notebooks",
+        "Pandas", "NumPy", "Git", "Cloud ML platforms", "Spark/Big Data tools"
+      ],
+      "tasks": [
+        "Apply mathematical or statistical theory and methods to collect, organize, and interpret data",
+        "Develop data collection instruments, formats, and procedures",
+        "Identify data sets that can answer research questions",
+        "Communicate findings with technical and non-technical audiences",
+        "Build predictive and classification models",
+        "Develop data pipelines and ETL processes"
+      ],
+      "related_soc_codes": ["15-1252.00", "15-2041.00", "13-2011.00"]
+    },
+    {
+      "soc_code": "15-1244.00",
+      "title": "Network and Computer Systems Administrators",
+      "description": "Install, configure, and maintain an organization's local area network (LAN), wide area network (WAN), data communications network, operating systems, and physical and virtual servers.",
+      "skills": [
+        "Troubleshooting", "Operations Monitoring", "Critical Thinking",
+        "Systems Analysis", "Repairing", "Active Learning",
+        "Complex Problem Solving", "Coordination", "Judgment and Decision Making"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Telecommunications", "Engineering and Technology",
+        "Customer and Personal Service", "English Language", "Administration and Management"
+      ],
+      "tech_skills": [
+        "Linux/Windows Server", "Cisco networking", "TCP/IP protocols", "DNS/DHCP",
+        "Firewalls and VPN", "Virtualisation (VMware, Hyper-V)", "Cloud infrastructure",
+        "Bash/PowerShell scripting", "Monitoring tools (Nagios, Zabbix)", "Active Directory"
+      ],
+      "tasks": [
+        "Monitor network performance to determine whether adjustments need to be made",
+        "Perform data backups and disaster recovery operations",
+        "Install and support LANs, WANs, network segments, internet, and intranet systems",
+        "Diagnose, troubleshoot, and resolve hardware, software, or network problems",
+        "Maintain and administer computer networks and related computing environments"
+      ],
+      "related_soc_codes": ["15-1211.00", "15-1231.00", "15-1299.08"]
+    },
+    {
+      "soc_code": "15-1231.00",
+      "title": "Computer Network Support Specialists",
+      "description": "Analyze, test, troubleshoot, and evaluate existing network systems, such as local area networks (LANs), wide area networks (WANs), and Internet systems or a segment of a network system.",
+      "skills": [
+        "Troubleshooting", "Repairing", "Active Learning", "Critical Thinking",
+        "Operations Monitoring", "Systems Analysis", "Complex Problem Solving",
+        "Service Orientation", "Communication"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Telecommunications", "Customer and Personal Service",
+        "English Language", "Engineering and Technology"
+      ],
+      "tech_skills": [
+        "Network troubleshooting tools", "TCP/IP", "Wireless networking",
+        "VoIP systems", "Help-desk software", "Remote desktop tools",
+        "Network monitoring tools", "Basic scripting"
+      ],
+      "tasks": [
+        "Test and evaluate hardware and software to determine efficiency and compatibility",
+        "Set up equipment for employee use, performing installation of hardware and software",
+        "Resolve user problems and answer questions about network use",
+        "Configure systems and applications and coordinate installation of network components",
+        "Document network problems and resolutions for future reference"
+      ],
+      "related_soc_codes": ["15-1244.00", "15-1211.00"]
+    },
+    {
+      "soc_code": "17-2061.00",
+      "title": "Computer Hardware Engineers",
+      "description": "Research, design, develop, or test computer or computer-related equipment for commercial, industrial, military, or scientific use. May supervise the manufacturing and installation of computer or computer-related equipment and components.",
+      "skills": [
+        "Programming", "Systems Analysis", "Operations Analysis", "Critical Thinking",
+        "Complex Problem Solving", "Active Learning", "Mathematics",
+        "Quality Control Analysis", "Systems Evaluation"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Engineering and Technology", "Mathematics",
+        "Design", "Physics", "English Language"
+      ],
+      "tech_skills": [
+        "VHDL/Verilog", "PCB design tools (Altium, Eagle)", "FPGA programming",
+        "Embedded C/C++", "Oscilloscopes and signal analysers",
+        "Microcontroller programming (Arduino, STM32)", "MATLAB/Simulink",
+        "Digital signal processing"
+      ],
+      "tasks": [
+        "Design, build, or test computer or computer-related equipment",
+        "Analyze information to determine, recommend, and plan layout",
+        "Evaluate factors such as reporting formats required and speed of equipment operation",
+        "Test and verify hardware and support peripherals to ensure meeting specifications",
+        "Update knowledge and skills to keep up with rapid advancements in computer technology"
+      ],
+      "related_soc_codes": ["15-1252.00", "17-2112.00"]
+    },
+    {
+      "soc_code": "13-1161.00",
+      "title": "Market Research Analysts and Marketing Specialists",
+      "description": "Research conditions in local, regional, national, or online markets. Gather information to determine potential sales of a product or service, or plan a marketing or advertising campaign.",
+      "skills": [
+        "Critical Thinking", "Active Learning", "Reading Comprehension",
+        "Complex Problem Solving", "Systems Analysis", "Judgment and Decision Making",
+        "Monitoring", "Mathematics"
+      ],
+      "knowledge_areas": [
+        "Sales and Marketing", "Customer and Personal Service", "Administration and Management",
+        "English Language", "Mathematics and Statistics", "Computers and Electronics"
+      ],
+      "tech_skills": [
+        "Statistical software (SPSS, SAS, R)", "Excel", "SQL",
+        "Data visualisation tools", "CRM software", "Survey platforms",
+        "Google Analytics", "Python for data analysis"
+      ],
+      "tasks": [
+        "Collect and analyse data on customer demographics and preferences",
+        "Prepare reports of findings, including data and graphs",
+        "Measure and assess customer and employee satisfaction",
+        "Seek and provide information to help companies determine their position in the marketplace",
+        "Devise and evaluate methods and procedures for collecting data"
+      ],
+      "related_soc_codes": ["15-2051.00", "13-2011.00"]
+    },
+    {
+      "soc_code": "13-2011.00",
+      "title": "Accountants and Auditors",
+      "description": "Examine, analyze, and interpret accounting records to prepare financial statements, give advice, or audit and evaluate statements prepared by others. Install or advise on systems of recording costs or other financial and budgetary data.",
+      "skills": [
+        "Active Learning", "Critical Thinking", "Mathematics", "Reading Comprehension",
+        "Complex Problem Solving", "Judgment and Decision Making", "Systems Analysis",
+        "Operations Analysis", "Time Management"
+      ],
+      "knowledge_areas": [
+        "Economics and Accounting", "Mathematics and Statistics",
+        "Administration and Management", "English Language",
+        "Computers and Electronics", "Customer and Personal Service"
+      ],
+      "tech_skills": [
+        "Accounting software (SAP, Tally, QuickBooks)", "Excel (advanced)",
+        "SQL", "ERP systems", "Tax software", "Data analysis tools",
+        "Audit management software"
+      ],
+      "tasks": [
+        "Prepare, examine, or analyse accounting records, financial statements",
+        "Establish tables of accounts and assign entries to proper accounts",
+        "Develop, implement, modify, and document record-keeping systems",
+        "Compute taxes owed and prepare tax returns",
+        "Advise management about issues such as resource utilisation and tax strategies"
+      ],
+      "related_soc_codes": ["13-2031.00", "13-2051.00", "13-1161.00"]
+    },
+    {
+      "soc_code": "15-1299.08",
+      "title": "Business Intelligence Analysts",
+      "description": "Produce financial and market intelligence by querying data repositories and generating periodic reports. Devise methods for identifying data patterns and trends in available information sources.",
+      "skills": [
+        "Critical Thinking", "Systems Analysis", "Programming", "Mathematics",
+        "Active Learning", "Complex Problem Solving", "Judgment and Decision Making",
+        "Operations Analysis"
+      ],
+      "knowledge_areas": [
+        "Computers and Electronics", "Administration and Management",
+        "Mathematics and Statistics", "Customer and Personal Service",
+        "Economics and Accounting", "English Language"
+      ],
+      "tech_skills": [
+        "SQL", "Python or R", "Tableau or Power BI", "Excel (advanced)",
+        "Data warehousing concepts", "ETL tools", "OLAP tools",
+        "Statistical analysis", "Business reporting"
+      ],
+      "tasks": [
+        "Synthesise current business intelligence data to produce reports",
+        "Analyse competitive market strategies through analysis of related product and market trends",
+        "Create or maintain business intelligence tools or systems",
+        "Identify or monitor current and potential customers using business intelligence tools",
+        "Conduct or coordinate tests to ensure that intelligence is consistent with defined needs"
+      ],
+      "related_soc_codes": ["15-2051.00", "15-1211.00", "13-2011.00"]
+    }
+  ]
+}
